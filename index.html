@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@dracula/css/dracula.min.css">
+    <title>Portifolio - Yuri Siqueira </title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>
+                <xmp></Yuri Siqueira ></xmp>
+            </h1>
+            <a href="#" id="menu"><img src="./img/menu.png" alt="Menu"></a>
+            <ul class="menu">
+                <li><a href="#informacao">Sobre Mim</a></li>
+                <li><a href="#minhas-habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Meus Projetos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="informacao">
+            <div id="sobre">
+                <h1>Yuri Siqueira</h1>
+                <h2>Web Developer</h2>
+                <h3>Estudante de Desenvolvimento de Sistemas no SENAI e apaixonado por tecnologia, busco oportunidades como Web Developer, freelancer ou estagiário. Estou em constante aprendizado, focado em criar soluções modernas, funcionais e responsivas para a web..</h3>
+            </div>
+            <div id="codigo">
+                <span><pre class="hljs" style="display: block; overflow-x: auto; color: rgb(186, 186, 186);">let <span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu </span>= document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+let float_menu = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_menu--float"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        
+let line_top = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--top"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+let line_under = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--bottom"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        
+<span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu.isSelected </span>= false<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        
+function <span class="hljs-keyword" style="color: rgb(203, 120, 50);">addEffectWriting(element, </span>time) {
+    let element_array = element.innerText.split(<span class="hljs-string" style="color: rgb(224, 196, 108);">""</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+    element.count = <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+    element.innerText = <span class="hljs-string" style="color: rgb(224, 196, 108);">""</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+    function writeSymbols() {
+        element.innerText += element_array[element.count]<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+        element.count++<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+        if (element.count &lt;= element_array.length) {
+            setTimeout(() =&gt; {
+                writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+            }, time)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+        } else if (element.count &gt;= element_array.length) {
+            element.count = <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+            element.innerText = <span class="hljs-string" style="color: rgb(224, 196, 108);">""</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+
+            writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+        }
+    }
+    writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+}</pre></span>
+            </div>
+        </section>
+
+        <section id="historia">
+            <img src="./img/Logo.png" alt="Retangulo">
+            <h1>Como jovem estudante, estou dando os primeiros passos no mundo do desenvolvimento web. Recentemente, descobri minha paixão por criar sites e interfaces, e desde então venho aprendendo e praticando para melhorar minhas habilidades. 
+                
+            </h1>
+        </section>
+        <section id="minhas-habilidades">
+            <h1 class="titulo">Minhas Habilidades</h1>
+            <div id="habilidades">
+                <div class="card">
+                    <img src="./img/icon html.png" alt="HTML5" class="normal">
+                    <img src="./img/icon html -- hover.png" alt="HTML5" class="hover">
+                    <h1>HTML5</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/icon css.png" alt="CSS3" class="normal">
+                    <img src="./img/icon css - hover.png" alt="CSS" class="hover">
+                    <h1>CSS3</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/icon js.png" alt="JAVASCRIPT" class="normal">
+                    <img src="./img/icon js -- hover.png" alt="JAVASCRIPT" class="hover">
+                    <h1>JavaScript</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/icon git.png" alt="GIT" class="normal">
+                    <img src="./img/icon git -- hover.png" alt="GIT" class="hover">
+                    <h1>Git</h1>
+                </div>
+            </div>
+        </section>
+        <section id="projetos">
+            <h1>Meus Projetos</h1>
+            <div id="sites">
+                <div id="shopify" allowfullscreen>
+                    <h1>Projeto LoadingPage Shopify</h1>
+                    <iframe src="./Shopify/index.html" frameborder="0" style="background-color: #fff;" height="100%" width="100%"></iframe>
+                    <div class="botoes">
+                        <button class="botao-tela-cheia">VER PROJETO EM TELA CHEIA</button>
+                        <a href="https://github.com/carloseduardori/Portifolio-Projetos/tree/main/Shopify" target="_blank"><button>IR PARA O REPOSITORIO</button></a>
+                    </div>
+                </div>
+                <div id="netflix" allowfullscreen>
+                    <h1>Projeto Clone Site Netflix</h1>
+                    <iframe src="./Netflix/index.html" frameborder="0" style="background-color: #fff;" height="100%" width="100%"></iframe>
+                    <div class="botoes">
+                        <button class="botao-tela-cheia">VER PROJETO EM TELA CHEIA</button>
+                        <a href="https://github.com/carloseduardori/Portifolio-Projetos/tree/main/Netflix" target="_blank"><button>IR PARA O REPOSITORIO</button></a>
+                    </div>
+                </div>
+                <div id="bikcraft" allowfullscreen>
+                    <h1>Projeto Site BikCraft</h1>
+                    <iframe src="./Bikcraft/index.html" frameborder="0" style="background-color: #fff;" height="100%" width="100%"></iframe>
+                    <div class="botoes">
+                        <button class="botao-tela-cheia">VER PROJETO EM TELA CHEIA</button>
+                        <a href="https://github.com/carloseduardori/Portifolio-Projetos/tree/main/Bikcraft" target="_blank"><button>IR PARA O REPOSITORIO</button></a>
+                    </div>
+                </div>
+                <div id="wildbeast" allowfullscreen>
+                    <h1>Projeto Site WildBest</h1>
+                    <iframe src="./WildBeast/index.html" frameborder="0" style="background-color: #fff;" height="100%" width="100%"></iframe>
+                    <div class="botoes">
+                        <button class="botao-tela-cheia">VER PROJETO EM TELA CHEIA</button>
+                        <a href="https://github.com/carloseduardori/Portifolio-Projetos/tree/main/WildBeast" target="_blank"><button>IR PARA O REPOSITORIO</button></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Yuurih44" target="_blank"><button class="mais">VER MAIS</button></a>
+        </section>
+    </main>
+    <footer>
+        <div id="msg">
+            <h1><xmp></Yuri Siqueira></xmp></h1>
+            <h2>Se você gostou do meu trabalho <br> e precisa de mim, estou <br> pronto para conversar com você.</h2>
+        </div>
+        <div id="contatos">
+            <h1>Contatos</h1>
+            <ul>
+                <li><img src="./img/gmail.png" alt="gmail"> <a href="yuricontatopp@gmail.com"
+                        target="_blank">yurisiqueiraalves@gmail.com</a></li>
+                <li><img src="./img/instagram.png" alt="instagram"><a href="https://www.instagram.com/yuurih44/?next=%2"
+                        target="_blank">@yuurih44</a></li>
+                <li><img src="./img/github.png" alt="github"> <a href="https://github.com/Yuurih44"
+                        target="_blank">Yuurih44</a></li>
+                <li><img src="./img/linkedin.png" alt="linkedin"><a
+                        href="https://www.linkedin.com/in/carlos-eduardo-ribeiro-do-patrocinio/" target="_blank">Yuri Siqueira
+                        </a></li>
+            </ul>
+        </div>
+    </footer>
+<script>
+let menuButton = document.querySelector("#menu");
+let menu = document.querySelector(".menu");
+
+menuButton.addEventListener("click", function () {
+    menu.classList.toggle("open");
+});
+
+const botoesTelaCheia = document.querySelectorAll('.botao-tela-cheia');
+const iframes = document.querySelectorAll('iframe');
+
+botoesTelaCheia.forEach((botao, index) => {
+  botao.addEventListener('click', () => {
+    iframes[index].requestFullscreen();
+  });
+});
+</script>
+</body>
+
+</html>
